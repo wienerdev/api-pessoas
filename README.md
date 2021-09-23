@@ -48,7 +48,7 @@ http://localhost:8080/api/v1/people
 * [Site oficial do Spring](https://spring.io/)
 * [Site oficial do Spring Initialzr, para setup do projeto](https://start.spring.io/)
 * [SDKMan! para gerenciamento e instalação do Java e Maven](https://sdkman.io/)
-* 
+
 <h2 align="center">
 Para acessar o projeto direto da nuvem, <a href="https://seurh-api.herokuapp.com/api/v1/people" target="_blank">clique aqui!</a>
 </h1>
