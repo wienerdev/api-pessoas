@@ -1,6 +1,6 @@
 <br>
 <h1 align="center">
-Sistema para Gerenciamento de Pessoas 👨‍👩‍👧‍👧
+API para Gerenciamento de Pessoas 👨‍👩‍👧‍👧
 </h1>
 <br>
 
@@ -15,7 +15,7 @@ API desenvolvida para um sistema de gerenciamento de pessoas, utilizando Java 11
 * Desenvolvimento de operações de gerenciamento de usuários (Cadastro, leitura, atualização e remoção de pessoas de um sistema)
 * Relação de cada uma das operações acima com o padrão arquitetural REST (GET, POST, PUT, DELETE)
 * Desenvolvimento de testes unitários para validação das funcionalidades (JUnit)
-* Implantação do sistema na nuvem através do Heroku
+* Deploy do projeto na nuvem através do Heroku
 
 ## 📌 Como utilizar?
 
