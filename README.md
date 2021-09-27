@@ -45,7 +45,7 @@ Para conferir se as operações de gerenciamento de usuários estão funcionando
 * [Referência para o padrão arquitetural REST](https://restfulapi.net/)
 * [Palheta de atalhos de comandos do IntelliJ](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
 * [Site oficial do Spring](https://spring.io/)
-* [Site oficial do Spring Initialzr, para setup do projeto](https://start.spring.io/)
+* [Site oficial do Spring Initialzr para setup do projeto](https://start.spring.io/)
 * [SDKMan! para gerenciamento e instalação do Java e Maven](https://sdkman.io/)
 
 ---
