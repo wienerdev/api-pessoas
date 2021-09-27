@@ -47,3 +47,5 @@ Para conferir se as operações de gerenciamento de usuários estão funcionando
 * [Site oficial do Spring](https://spring.io/)
 * [Site oficial do Spring Initialzr, para setup do projeto](https://start.spring.io/)
 * [SDKMan! para gerenciamento e instalação do Java e Maven](https://sdkman.io/)
+
+---
