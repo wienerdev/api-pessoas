@@ -7,6 +7,7 @@ import one.dio.personapi.entity.Person;
 import one.dio.personapi.exception.PersonNotFoundException;
 import one.dio.personapi.mapper.PersonMapper;
 import one.dio.personapi.repository.PersonRepository;
+import org.aspectj.bridge.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,7 @@ public class PersonService {
         Person personToSave = personMapper.toModel(personDTO);
 
         Person savedPerson = personRepository.save(personToSave);
-        return createMessageResponse(savedPerson.getId(), "Created person with ID ");
+        return createMessageResponse(savedPerson, "Created person with ID ");
     }
 
     public List<PersonDTO> listAll() {
@@ -45,13 +46,11 @@ public class PersonService {
         personRepository.deleteById(id);
     }
 
-    public MessageResponseDTO deleteById(Long id, PersonDTO personDTO) throws PersonNotFoundException {
+    public MessageResponseDTO updateById(Long id, PersonDTO personDTO) throws PersonNotFoundException {
         verifyIfExists(id);
-
         Person personToUpdate = personMapper.toModel(personDTO);
-
         Person updatedPerson = personRepository.save(personToUpdate);
-        return createMessageResponse(updatedPerson.getId(), "Updated person with ID ");
+        return createMessageResponse(updatedPerson, "Updated person with ID ");
     }
 
     private Person verifyIfExists(Long id) throws PersonNotFoundException {
@@ -59,12 +58,13 @@ public class PersonService {
                 .orElseThrow(() -> new PersonNotFoundException(id));
     }
 
-    private MessageResponseDTO createMessageResponse(Long id, String message) {
+    private MessageResponseDTO createMessageResponse(Person savedPerson, String s) {
         return MessageResponseDTO
                 .builder()
-                .message(message + id)
+                .message(s + savedPerson.getId())
                 .build();
     }
+
 
 }
 

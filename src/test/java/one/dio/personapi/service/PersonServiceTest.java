@@ -4,7 +4,6 @@ import one.dio.personapi.dto.request.PersonDTO;
 import one.dio.personapi.dto.response.MessageResponseDTO;
 import one.dio.personapi.entity.Person;
 import one.dio.personapi.repository.PersonRepository;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -13,7 +12,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import static one.dio.personapi.utils.PersonUtils.createFakeDTO;
 import static one.dio.personapi.utils.PersonUtils.createFakeEntity;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.when;
 
