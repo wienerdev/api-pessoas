@@ -17,6 +17,11 @@ API desenvolvida para um sistema de gerenciamento de pessoas, utilizando Java 11
 * Desenvolvimento de testes unitários para validação das funcionalidades (JUnit)
 * Deploy do projeto na nuvem através do Heroku
 
+## ⚠ Pré-requisitos para execução do projeto
+
+* Java 11 ou versões superiores
+* Maven 3.8.2 ou versões superiores
+
 ## 📌 Como utilizar?
 
 Para executar o projeto no terminal, digite o seguinte comando:
@@ -32,11 +37,6 @@ http://localhost:8080/api/v1/people
 ```
 
 Para conferir se as operações de gerenciamento de usuários estão funcionando, utilize o Postman, [clique aqui para ver!](https://ibb.co/0QMytWZ)
-
-## ⚠ Pré-requisitos para execução do projeto
-
-* Java 11 ou versões superiores
-* Maven 3.8.2 ou versões superiores
 
 ## 🧠 Links importantes
 
